@@ -1,0 +1,140 @@
+:root {
+    --clr-bg : rgb(252, 212, 161, 1);
+    --clr-orange : rgb(254, 181, 102, 1);
+    --clr-orange-dark : rgb(243, 153, 83, 1);
+    --clr-yellow : rgb(254, 214, 119, 1);
+    --clr-yellow-dark : rgb(232, 183, 89, 1);
+    --clr-brown : rgb(67, 45, 67, 1);
+    --clr-red : rgb(235, 127, 115, 1);
+    --clr-spot-light : rgb(254, 254, 255, 1);
+    --clr-spot-orange : rgb(251, 158, 58, 1);
+    --clr-spot-yellow : rgb(251, 244, 173, 1);
+    --border-width : 0.85vmin;
+    --spot-small : 1vmin;
+    --spot-mid : 1.5vmin;
+    --spot-big : 2vmin;
+    }
+    *, *::after, *::before {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    }
+    body {
+    background : var(--clr-bg);
+    display : grid;
+    place-items : center;
+    min-height : 100vh;
+    }
+    .container {
+    margin-top : 10vmin;
+    width : 60vmin;
+    height : 25vmin;
+    position : relative;
+    }
+    .spot {
+    position : absolute;
+    border-radius : 50%;
+    background : transparent;
+    }
+    .spot-small {
+    height : var(--spot-small);
+    box-shadow : -6vmin -22vmin 0 var(--clr-spot-light), 8vmin -12vmin 0 var(--clr-spot-light), -11vmin 15vmin 0 var(--clr-spot-light), 53vmin -16vmin 0 var(--clr-spot-light), 60vmin 20vmin 0 var(--clr-spot-light), 68vmin 2vmin 0 var(--clr-spot-light), 47vmin -6vmin 0 var(--clr-spot-light), 14vmin 29vmin 0 var(--clr-spot-light), 42vmin 9vmin 0 var(--clr-spot-yellow), 39vmin 4vmin 0 var(--clr-spot-orange), 38vmin 13vmin 0 var(--clr-spot-orange), 21vmin -14vmin 0 var(--clr-spot-orange), 19vmin -4vmin 0 var(--clr-spot-yellow), 30vmin -10vmin 0 var(--clr-spot-yellow);
+    }
+    .spot-mid {
+    height : var(--spot-mid);
+    box-shadow : 3vmin -27vmin 0 var(--clr-spot-light), 40vmin -31vmin 0 var(--clr-spot-light), 41vmin -10vmin 0 var(--clr-spot-light), 51vmin -2vmin 0 var(--clr-spot-light), 6vmin 28vmin 0 var(--clr-spot-light), 34vmin 29vmin 0 var(--clr-spot-light);
+    }
+    .line {
+    position : absolute;
+    border-bottom : var(--border-width) solid var(--clr-brown);
+    border-radius : 1rem;
+    }
+    .line-extra {
+    bottom : -5vmin;
+    right : 6vmin;
+    width : 10vmin;
+    }
+    .line-extra-2 {
+    bottom : -10vmin;
+    width : 15vmin;
+    right : 40%;
+    }
+    .bottom-line {
+    bottom : 0;
+    width : 100%;
+    }
+    .tree {
+    position : absolute;
+    bottom : 0;
+    width : var(--border-width);
+    background-color : var(--clr-brown);
+    border-radius : 1rem;
+    }
+    .tree-circle {
+    right : 40%;
+    height : 13vmin;
+    }
+    .tree-weird {
+    height : 28vmin;
+    left : 40%;
+    }
+    .bush {
+    position : absolute;
+    background-color : var(--clr-red);
+    box-shadow : 0 0 0 var(--border-width) var(--clr-brown);
+    border-radius : 50%;
+    }
+    .bush-right {
+    bottom : 0;
+    height : 5vmin;
+    right : 20%;
+    }
+    .bush-left {
+    bottom : 0;
+    height : 7vmin;
+    left : 25%;
+    }
+    .bush-middle {
+    height : 4vmin;
+    bottom : 0;
+    left : 35%;
+    }
+    .spot {
+    position : absolute;
+    border-radius : 50%;
+    z-index : 5;
+    }
+    .bush > .spot {
+    background-color : var(--clr-spot-light);
+    top : 20%;
+    left : 20%;
+    height : 0.5vmin;
+    }
+    .bush-left > .spot {
+    box-shadow : -4vmin 1.5vmin 0 var(--clr-spot-light);
+    }
+    .bars {
+    position : absolute;
+    left : 10%;
+    bottom : var(--border-width);
+    width : 80%;
+    z-index : -5;
+    }
+    .bar {
+    height : 2.5vmin;
+    background-color : var(--clr-spot-light);
+    border-radius : 1rem;
+    }
+    .bar:nth-child(2) {
+    transform : translatex(3vmin);
+    }
+    .bar:nth-child(3) {
+    transform : translatex(2vmin);
+    }
+    .bar:nth-child(5) {
+    transform : translatex(-1vmin);
+    }
+    .bar:nth-child(7) {
+    transform : translatex(3vmin);
+    }
+    

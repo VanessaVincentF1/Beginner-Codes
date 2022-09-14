@@ -1,0 +1,26 @@
+
+let name = 'vanessa';
+ console.log('name');
+ //a name cannot be a reserved keyword
+ //should be meaningful
+ //cannot start with a number
+ //cannot contain a spce or hyphen
+ //variable names are case sensitive
+
+ let firstname; lastname = "umekwe";
+ let middlename = "mary-cynthia";
+ //it is preferable to declare variables on their own lines
+
+ const interestRate = 0.3
+ //you cannot reassign a constant. it would cause an error 
+ //use let instead when you need to reassign
+ let interestRate = 0.5 //this is a visual example of the error
+
+ //two types of variables are primitive and reference
+ //types of primitives/values are: booleans, strings,number,undefined and null
+ let girlname = "vanessa"; //string
+ let age = "22"; //number
+ let isApproved = "true"; //boolean. its value can be true or false
+ let profession = undefined; //this can also be done by not assigning value
+ let selectedColor = null; // null is used where we want to clear the value of a variable
+
